@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+.logo{
+  float: left;
+  margin-right: 3px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+ }
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+.menu a{
+  color: purple;
+  text-decoration:none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.content{
+  overflow: hidden;
+  margin-left: 0px;
+}
+.navbar {
+  position: fixed;
+  justify-content:flex-end;
+  background-color:green;
+  color:blue;
+  padding: 10px;
+  display: flex;
+  font-size: 48px;
+  font-weight: bolder;  
+  font-style: normal;   
+  align-items: center;
+  left: 0px;
+  margin-top: 0px;
+  top: 5px;
+}
+.slideshow {
+  position:relative;
+  width: 100%;
+  height: 525px; /* Adjust the height as needed */
+  overflow: hidden;
+  top: 206px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-image: url(beb\ \(4\).png);
+  background-position:center;
+  z-index: -1;
+}
+.slideshow img {
+  top: 0px;
+  left: 0;
+  opacity: 0;
+  width: 600px;
+  height: auto;
+  position: absolute;
+  object-fit: cover;
+  animation: slideAnimation 10s linear infinite;
+}@keyframes slideAnimation{
+  0%{
+      transform: translateX(-100%);
+      opacity: 1;
+  }
+  5%{
+    transform: translateX(90%);
+    opacity: 1;
+  }
+}
+nav ul li a:hover {
+color:orange
+}
+.logo img{
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 85px;
+  height: auto;
+  top: 20px;
+  left: 10px;
+  background-color: green;
+}
+  header {
+    background-color:green;
+    align-items:center;
+    justify-content: space-between;
+    padding: 30px;
+    display: flex;
+    
+  }
+  a{
+    text-decoration: none;
+    outline: none;
+    color: orange;
+  }
+    
+    body >img{
+      border-radius: 50%;
+      width: 200px;
+      height: auto;
+    }
+    .caption{
+      position:fixed;
+      display: flex;
+      justify-content: flex-end;
+      background-color: white;
+      top: 125px;
+  left:0px;
+  z-index: 1;
+  animation: moveCaption 10s linear running infinite;
+  font-size: 16px;
+    }
+@keyframes moveCaption{
+  0%{
+      transform: translateX(100%);
+  }
+  100%{
+      transform: translateX(-100);
+  }
+}
+ 
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.header {
+  font-size: 36px;
+  margin: 0;
+}
+  .menu a {
+    color:white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor:pointer;
+}
+
+footer{
+  text-align: center;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.image-container{
+  margin-right: 50px;
+}
+.footer-container img{
+  height: auto;
+  width: 50px;
+  border-radius: 50px;
+}
+.paragraph-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle-paragraph{
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+      display: none;
+      flex-direction:column;
+      position: absolute;
+      top: 150px;
+      left: 0;
+      width: 100%;
+      text-align:left;
+      margin: 0;
+      color:purple;
+      font-size: 18px;
+  }
+
+  .menu.show {
+      display: flex;
+  }
+
+  .menu li {
+      margin: 4px 0;
+  }
+
+  .hamburger {
+      display: block;
+  }
+  .caption {
+    font-size: 5px;
+  }
+  body >img{
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}
+h4{
+  font: size 14;
+}
+
+.slideshow {
+  position:relative;
+  width: 100%;
+  height: 525px; /* Adjust the height as needed */
+  overflow: hidden;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-image: url(beb\ \(4\).png);
+  background-position:center;
+  z-index: -1;
+}
+.slideshow img {
+  top: 0px;
+  left: 0;
+  opacity: 0;
+  width: 600px;
+  height: auto;
+  position: absolute;
+  object-fit:cover;
+  animation: slideAnimation 10s linear infinite;
+}
+}
